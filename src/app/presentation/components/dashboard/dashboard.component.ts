@@ -1,4 +1,4 @@
-import { Component, ViewChild, AfterViewInit } from '@angular/core'
+import { Component, ViewChild, AfterViewInit, OnInit } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator'
 import { MatSort } from '@angular/material/sort'
 import { MatTableDataSource } from '@angular/material/table'
@@ -11,8 +11,8 @@ import { AuthService } from '@auth0/auth0-angular'
     styleUrls: ['./dashboard.component.css']
 })
 
-export class DashboardComponent implements AfterViewInit {
-    displayedColumns: string[] = ['id', 'phone', 'status', 'created', 'completed', 'pdf', 'action', 'send']
+export class DashboardComponent implements AfterViewInit{
+    displayedColumns: string[] = ['id', 'phone', 'state', 'status', 'created', 'completed', 'pdf', 'action', 'send']
     personList: PeopleList = new PeopleList()
     dataSource = new MatTableDataSource<Person>(this.personList.people)
     autorizados!: number
@@ -30,14 +30,15 @@ export class DashboardComponent implements AfterViewInit {
     @ViewChild(MatPaginator, { static: true }) paginator!: MatPaginator;
     @ViewChild(MatSort, { static: true }) sort!: MatSort
 
-    ngOnInit() {
-        this.dataSource.sort = this.sort
-        this.getStatus()
-    }
+    // ngOnInit() {
+    //     this.dataSource.sort = this.sort
+    //     this.getStatus()
+    // }
 
     ngAfterViewInit() {
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
+        this.getStatus()
     }
 
     logOut() {
