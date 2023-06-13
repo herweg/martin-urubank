@@ -3,15 +3,20 @@
 }
 
 .sidebar {
-    margin-left: 2vw;
+    margin-left: 1vw;
     background-color: #fff;
     align-self: flex-start;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
 
-.container {
+button{
+    border-radius: 5px;
+    padding: 0 3px;
+    background-color: #858acb;
+}
 
+.container {
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
@@ -39,22 +44,22 @@ h2 {
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.button {
-    background-color: #635dff;
+button {
+    background-color: #5856D6;
     color: #fff;
     border: none;
-    padding: 1rem;
+    padding: 0.3rem 0.5rem;
     border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
 }
 
-table {
+mat-table {
     margin-top: 2rem;
     width: 100%;
 }
 
-table th {
+mat-table mat-header-cell {
     background-color: #2F314B;
     font-weight: bold;
     color: rgb(218, 218, 243);
