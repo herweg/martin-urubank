@@ -10,12 +10,6 @@
     border-radius: 5px;
 }
 
-button{
-    border-radius: 5px;
-    padding: 0 3px;
-    background-color: #858acb;
-}
-
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -55,20 +49,20 @@ button {
 }
 
 mat-table {
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 100%;
 }
 
 mat-table mat-header-cell {
     background-color: #2F314B;
-    font-weight: bold;
-    color: rgb(218, 218, 243);
+    color: rgb(255, 255, 255);
 }
 
 mat-paginator {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 5px;

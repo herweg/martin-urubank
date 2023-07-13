@@ -1,6 +1,6 @@
 <div class="dashboard">
 
-    <div class="sidebar">
+    <!-- <div class="sidebar">
         <mat-list>
             <mat-list-item style="background-color: rgb(102, 77, 131);">Summary</mat-list-item>
             <mat-list-item>Approved: {{autorizados}}</mat-list-item>
@@ -15,39 +15,87 @@
             <mat-divider></mat-divider>
             <mat-list-item>Pending: {{pendientes}}</mat-list-item>
         </mat-list>
-    </div>
+    </div> -->
 
     <div class="container">
         <mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
 
-            <!-- Phone Column -->
-            <ng-container matColumnDef="phone">
-                <mat-header-cell *matHeaderCellDef mat-sort-header> Phone </mat-header-cell>
-                <mat-cell *matCellDef="let lead">{{ lead.phone }}</mat-cell>
+            <!-- Id Column -->
+            <ng-container matColumnDef="id">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Id </mat-header-cell>
+                <mat-cell *matCellDef="let lead">{{ lead.id }}</mat-cell>
             </ng-container>
 
-            <!-- State Column -->
-            <ng-container matColumnDef="state">
-                <mat-header-cell *matHeaderCellDef mat-sort-header> Location </mat-header-cell>
-                <mat-cell *matCellDef="let lead">{{ lead.state }}</mat-cell>
-            </ng-container>
-
-            <!-- Status Column -->
-            <ng-container matColumnDef="status">
-                <mat-header-cell *matHeaderCellDef mat-sort-header> Status </mat-header-cell>
-                <mat-cell *matCellDef="let lead">{{ lead.status }}</mat-cell>
-            </ng-container>
-
-            <!-- Created Column -->
-            <ng-container matColumnDef="created">
-                <mat-header-cell *matHeaderCellDef mat-sort-header> Created </mat-header-cell>
+            <!-- CreatedAt Column -->
+            <ng-container matColumnDef="createdAt">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Creado </mat-header-cell>
                 <mat-cell *matCellDef="let lead">{{ lead.createdAt }}</mat-cell>
             </ng-container>
 
-            <!-- Completed Column -->
-            <ng-container matColumnDef="completed">
-                <mat-header-cell *matHeaderCellDef mat-sort-header> Completed </mat-header-cell>
-                <mat-cell *matCellDef="let lead">{{ lead.completedAt }}</mat-cell>
+            <!-- fullName Column -->
+            <ng-container matColumnDef="fullName">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </mat-header-cell>
+                <mat-cell *matCellDef="let lead">{{ lead.fullName }}</mat-cell>
+            </ng-container>
+
+            <!-- Phone Column -->
+            <ng-container matColumnDef="phone">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Telefono </mat-header-cell>
+                <mat-cell *matCellDef="let lead">{{ lead.phone }}</mat-cell>
+            </ng-container>
+
+            <!-- document Column -->
+            <ng-container matColumnDef="document">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Documento </mat-header-cell>
+                <mat-cell *matCellDef="let lead">{{ lead.document }}</mat-cell>
+            </ng-container>
+            
+            <!-- email Column -->
+            <ng-container matColumnDef="email">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Email </mat-header-cell>
+                <mat-cell *matCellDef="let lead">{{ lead.email }}</mat-cell>
+            </ng-container>
+            
+            <!-- State Column -->
+            <ng-container matColumnDef="state">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Departamento </mat-header-cell>
+                <mat-cell *matCellDef="let lead">{{ lead.state }}</mat-cell>
+            </ng-container>
+            
+            <!-- city Column -->
+            <ng-container matColumnDef="city">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Ciudad </mat-header-cell>
+                <mat-cell *matCellDef="let lead">{{ lead.city }}</mat-cell>
+            </ng-container>
+            
+            <!-- amount Column -->
+            <ng-container matColumnDef="amount">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Monto ($) </mat-header-cell>
+                <mat-cell *matCellDef="let lead">{{ lead.amount }}</mat-cell>
+            </ng-container>
+
+            <!-- Status Column -->
+            <ng-container matColumnDef="applicationStatus">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Estado de aplicacion </mat-header-cell>
+                <mat-cell *matCellDef="let lead">{{ lead.applicationStatus }}</mat-cell>
+            </ng-container>
+            
+            <!-- processStatus Column -->
+            <ng-container matColumnDef="processStatus">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Estado </mat-header-cell>
+                <mat-cell *matCellDef="let lead">{{ lead.processStatus }}</mat-cell>
+            </ng-container>
+            
+            <!-- campaign Column -->
+            <ng-container matColumnDef="campaign">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Campaña </mat-header-cell>
+                <mat-cell *matCellDef="let lead">{{ lead.campaign }}</mat-cell>
+            </ng-container>
+            
+            <!-- financiera Column -->
+            <ng-container matColumnDef="financiera">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Financiera </mat-header-cell>
+                <mat-cell *matCellDef="let lead">{{ lead.financiera }}</mat-cell>
             </ng-container>
 
             <!-- PDF Column -->
