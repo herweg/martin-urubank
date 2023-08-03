@@ -4,21 +4,33 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GraphsComponent } from './graphs/graphs.component';
+import { BodyComponent } from './body/body.component';
 
 const routes: Routes = [
-  
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
 
-  { path: 'login', component: LoginComponent },
-  {
-    path: 'dashboard', component: DashboardComponent,
-    // ...canActivate(() => redirectUnauthorizedTo(['/login']))
-  },
-  { path: 'graphs', component: GraphsComponent },
+    {
+        path: '',
+        redirectTo: 'login',
+        pathMatch: 'full'
+    },
+    {
+        path: 'login',
+        component: LoginComponent,
+        data: { hideSidebar: true }
+    },
+    {
+        path: 'dashboard',
+        component: DashboardComponent
+    },
+    {
+        path: 'graphs',
+        component: GraphsComponent
+    },
+
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
 export class AppRoutingModule { }

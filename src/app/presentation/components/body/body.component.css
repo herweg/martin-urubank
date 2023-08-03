@@ -1,7 +1,6 @@
 .body {
     width: calc(100% - 4.8rem);
     height: 100vh;
-    margin-left: 4.8rem;
     z-index: 0;
     position: relative;
     top: 0;

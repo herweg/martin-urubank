@@ -1,6 +1,4 @@
 import { Component } from '@angular/core'
-import { SideBarToggle } from 'src/app/domain/interfaces/sidebar-toggle.interface'
-
 
 @Component({
     selector: 'app-root',
@@ -8,13 +6,8 @@ import { SideBarToggle } from 'src/app/domain/interfaces/sidebar-toggle.interfac
     styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {//implements AfterViewInit
+export class AppComponent {
 
-    isSideBarCollapsed = false
-    screenWidth = 0
-
-    onToggleSideBar(data: SideBarToggle): void {
-        this.screenWidth = data.screenWidth
-        this.isSideBarCollapsed = data.collapsed
-    }
+    isSideBarCollapsed = false;
+    screenWidth = 0;
 }

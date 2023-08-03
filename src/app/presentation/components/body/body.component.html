@@ -1,3 +1,4 @@
+<app-sidebar *ngIf="showSidebar" (onToggleSideBar)="onToggleSideBar($event)"></app-sidebar>
 <div class="body" [ngClass]="getBodyClass()">
     <router-outlet></router-outlet>
 </div>
