@@ -1,30 +1,15 @@
-<!-- <div class="sidebar">
-        <mat-list>
-            <mat-list-item style="background-color: rgb(102, 77, 131);">Summary</mat-list-item>
-            <mat-list-item>Approved: {{autorizados}}</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Not approved: {{noAutorizados}}</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Pending: {{pendientes}}</mat-list-item>
-            ---------------------------
-            <mat-list-item>Autorized: {{pendientes}}</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Not autorized: {{pendientes}}</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Pending: {{pendientes}}</mat-list-item>
-        </mat-list>
-    </div> -->
-
 <div class="dashboard">
     <div class="container">
         <h2 class="page-title">Solicitudes</h2>
+
+        
         <mat-table matTableExporter [dataSource]="dataSource" #exporter="matTableExporter" matSort
             class="mat-elevation-z8">
             <!-- Id Column -->
-            <ng-container matColumnDef="id">
+            <!-- <ng-container matColumnDef="id">
                 <mat-header-cell *matHeaderCellDef mat-sort-header>Id</mat-header-cell>
                 <mat-cell *matCellDef="let lead">{{ lead.id }}</mat-cell>
-            </ng-container>
+            </ng-container> -->
 
             <!-- CreatedAt Column -->
             <ng-container matColumnDef="createdAt">
@@ -45,16 +30,16 @@
             </ng-container>
 
             <!-- document Column -->
-            <ng-container matColumnDef="document">
+            <!-- <ng-container matColumnDef="document">
                 <mat-header-cell *matHeaderCellDef mat-sort-header>Documento</mat-header-cell>
                 <mat-cell *matCellDef="let lead">{{ lead.document }}</mat-cell>
-            </ng-container>
+            </ng-container> -->
 
             <!-- email Column -->
-            <ng-container matColumnDef="email">
+            <!-- <ng-container matColumnDef="email">
                 <mat-header-cell *matHeaderCellDef mat-sort-header>Email</mat-header-cell>
                 <mat-cell *matCellDef="let lead">{{ lead.email }}</mat-cell>
-            </ng-container>
+            </ng-container> -->
 
             <!-- State Column -->
             <ng-container matColumnDef="state">
@@ -63,10 +48,10 @@
             </ng-container>
 
             <!-- city Column -->
-            <ng-container matColumnDef="city">
+            <!-- <ng-container matColumnDef="city">
                 <mat-header-cell *matHeaderCellDef mat-sort-header>Ciudad</mat-header-cell>
                 <mat-cell *matCellDef="let lead">{{ lead.city }}</mat-cell>
-            </ng-container>
+            </ng-container> -->
 
             <!-- amount Column -->
             <ng-container matColumnDef="amount">
@@ -75,10 +60,10 @@
             </ng-container>
 
             <!-- Status Column -->
-            <ng-container matColumnDef="applicationStatus">
+            <!-- <ng-container matColumnDef="applicationStatus">
                 <mat-header-cell *matHeaderCellDef mat-sort-header>Estado de aplicación</mat-header-cell>
                 <mat-cell *matCellDef="let lead">{{ lead.applicationStatus }}</mat-cell>
-            </ng-container>
+            </ng-container> -->
 
             <!-- processStatus Column -->
             <ng-container matColumnDef="processStatus">
@@ -93,10 +78,10 @@
             </ng-container>
 
             <!-- financiera Column -->
-            <ng-container matColumnDef="financiera">
+            <!-- <ng-container matColumnDef="financiera">
                 <mat-header-cell *matHeaderCellDef mat-sort-header>Financiera</mat-header-cell>
                 <mat-cell *matCellDef="let lead">{{ lead.financiera }}</mat-cell>
-            </ng-container>
+            </ng-container> -->
 
             <!-- PDF Column -->
             <ng-container matColumnDef="pdf">

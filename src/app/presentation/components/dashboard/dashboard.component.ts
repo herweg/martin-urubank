@@ -17,20 +17,20 @@ import { SideBarToggle } from '../../../domain/interfaces/sidebar-toggle.interfa
 export class DashboardComponent implements AfterViewInit, OnInit {
 
     displayedColumns: string[] = [
-        'id',
+        // 'id',
         'createdAt',
         //'completedAt',
         'fullName',
         'phone',
-        'document',
-        'email',
+        // 'document',
+        // 'email',
         'state',
-        'city',
+        // 'city',
         'amount',
-        'applicationStatus',
+        // 'applicationStatus',
         'processStatus',
         'campaign',
-        'financiera',
+        // 'financiera',
         'pdf',
         'action',
         'send'

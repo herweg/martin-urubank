@@ -30,6 +30,9 @@ import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { GraphsComponent } from './graphs/graphs.component';
 import { MatTableExporterModule } from 'mat-table-exporter';
+import { MatCardModule } from '@angular/material/card';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+
 
 @NgModule({
   declarations: [
@@ -53,16 +56,18 @@ import { MatTableExporterModule } from 'mat-table-exporter';
     ReactiveFormsModule,
 
     //Angular Material
-    MatDividerModule,
-    MatSelectModule,
-    MatInputModule,
-    MatPaginatorModule,
-    MatTableModule,
     MatButtonModule,
-    MatListModule,
+    MatCardModule,
+    MatDatepickerModule,
+    MatDividerModule,
     MatFormFieldModule,
+    MatInputModule,
+    MatListModule,
+    MatPaginatorModule,
+    MatSelectModule,
     MatSortModule,
     MatTableExporterModule,
+    MatTableModule,
 
     //Auth0
     AuthModule.forRoot({
