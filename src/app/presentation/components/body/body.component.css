@@ -4,6 +4,7 @@
     z-index: 0;
     position: relative;
     top: 0;
+    left: 4.8rem;
     transition: all .5s ease;
     background: #f4f7fa;
     padding: 1rem;

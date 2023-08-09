@@ -2,6 +2,7 @@
     <div class="container">
         <h2 class="page-title">Solicitudes</h2>
 
+        <app-date-status-filter></app-date-status-filter>
         
         <mat-table matTableExporter [dataSource]="dataSource" #exporter="matTableExporter" matSort
             class="mat-elevation-z8">
@@ -118,7 +119,7 @@
                 <mat-paginator [length]="100" [pageSize]="10" aria-label="Select page"
                     class="paginator"></mat-paginator>
             </div>
-            <button class="exporter-btn" mat-button (click)="exporter.exportTable('xlsx')">Export</button>
+            <button class="exporter-btn" mat-raised-button color="primary" (click)="exporter.exportTable('xlsx')">Export</button>
         </div>
     </div>
 </div>

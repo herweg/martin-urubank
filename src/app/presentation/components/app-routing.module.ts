@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GraphsComponent } from './graphs/graphs.component';
 import { BodyComponent } from './body/body.component';
+import { DateStatusFilterComponent } from './date-status-filter/date-status-filter.component';
 
 const routes: Routes = [
 

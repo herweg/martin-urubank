@@ -32,6 +32,8 @@ import { GraphsComponent } from './graphs/graphs.component';
 import { MatTableExporterModule } from 'mat-table-exporter';
 import { MatCardModule } from '@angular/material/card';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { DateStatusFilterComponent } from './date-status-filter/date-status-filter.component';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 @NgModule({
@@ -43,7 +45,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     SidebarComponent,
     HeaderComponent,
     BodyComponent,
-    GraphsComponent
+    GraphsComponent,
+    DateStatusFilterComponent
   ],
   imports: [
     HttpClientModule,
@@ -68,6 +71,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MatSortModule,
     MatTableExporterModule,
     MatTableModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
 
     //Auth0
     AuthModule.forRoot({

@@ -18,14 +18,14 @@ export class GraphsComponent implements OnInit {
   }
 
   renderGraph() {
-    const graph = document.getElementById('graph');
+    const graph = document.getElementById('leadsbyday');
 
-    new Chart("graph", {
+    new Chart("leadsbyday", {
       type: 'bar',
       data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'],
         datasets: [{
-          label: '# of Votes',
+          label: 'Leads por dia',
           data: [12, 19, 3, 5, 2, 3],
           borderWidth: 1
         }]
